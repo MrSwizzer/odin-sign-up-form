@@ -1,13 +1,13 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
+main {
+    display: flex;
 }
 
-h1 {
-    font-family: Arial;
-    font-size: 24px;
-    font-weight: bold;
+.left-side {
+    border: black 1px solid;
+    background-image: url("../images/daniel-j-schwarz-UCoUdQ5dFTU-unsplash.jpg");
+    background-size: cover;
 }
 
-p {
-    font-size: 16px;
+.right-side {
+    border: black 1px solid;
 }
