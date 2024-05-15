@@ -1,7 +1,16 @@
+@font-face {
+  font-family: "norsebold";
+  src: url(../fonts/norse-bold.woff2) format("woff2"),
+    url(../fonts/norse-bold.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* normalize */
 
 :root {
   line-height: 1.5;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h1,
@@ -12,8 +21,8 @@ h5,
 figure,
 p,
 ol,
-ul, 
-body{
+ul,
+body {
   margin: 0;
 }
 
@@ -39,19 +48,73 @@ img {
 
 main {
   display: flex;
+  background-color: rgb(240, 240, 240);
 }
 
 .left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 60vh;
   background-image: url("../images/daniel-j-schwarz-UCoUdQ5dFTU-unsplash.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
-  width: 30%;
+  width: 40vw;
+}
+
+.logo {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 40vw;
+  height: 15vw;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  margin-top: 10vh;
+}
+
+.logo_paragraph {
+  font-family: norsebold, "Times New Roman", Times, serif;
+  font-size: clamp(3rem, 8vw, 10rem);
+  color: azure;
 }
 
 #odin_logo {
-  height: 200px;
+  height: 12vw;
+  margin: auto;
+  object-fit: contain;
+}
+
+#photo_credits {
+  font-size: clamp(0.5rem, 1vw, 3rem);
+  color: azure;
+  margin-bottom: 10px;
+}
+
+#photo_credits a {
+  color: azure;
 }
 
 .right-side {
+  margin-left: 5vw;
+  background-color: rgb(240, 240, 240);
+}
+
+.info {
+  margin-top: 10vh;
+}
+
+.introduction {
+  font-size: clamp(1rem, 2vw, 4rem);
+  font-weight: bold;
+}
+
+#call_to_action {
+  margin: 1rem 0 3rem 0;
+}
+
+.italic {
+  font-style: italic;
 }
