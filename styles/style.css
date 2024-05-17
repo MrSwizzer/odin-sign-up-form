@@ -99,12 +99,12 @@ main {
 }
 
 .right-side {
-  margin-left: 5vw;
+  margin-left: 0.5vw;
   background-color: rgb(240, 240, 240);
 }
 
 .info {
-  margin: 10vh 10vw;
+  margin: 5vh 5vw;
 }
 
 .introduction {
@@ -145,7 +145,29 @@ input, label {
 
 input[type='text'],
 input[type='email'],
-input[type='tel'] {
+input[type='tel'],
+input[type='password'] {
   width: 300px;
   font-size: 1.25rem;
+}
+
+form button {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: peru;
+  color: azure;
+  text-shadow: 1px 1px 2px #000;
+  font-size: 1.25rem;
+  margin: 20px 0;
+}
+
+.login_info{
+  margin-top: 80px;
+}
+
+.login_info a {
+  text-decoration: none;
+  color: peru;
+  text-shadow: 1px 1px 2px #000;
 }
