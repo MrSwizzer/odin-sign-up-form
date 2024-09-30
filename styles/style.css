@@ -10,7 +10,8 @@
 
 :root {
   line-height: 1.5;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 16px;
 }
 
@@ -121,32 +122,31 @@ main {
 }
 
 label {
-font-family: 'Courier New', Courier, monospace;
-font-size: 1rem
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
 }
 
-
-
 .flex_wrapper {
-  display: flex; 
+  display: flex;
   flex-wrap: wrap;
   gap: 50px;
   max-width: 650px;
 }
 
 .flex_wrapper li {
- width: 300px;
- height: 20px;
+  width: 300px;
+  height: 20px;
 }
 
-input, label {
+input,
+label {
   display: block;
 }
 
-input[type='text'],
-input[type='email'],
-input[type='tel'],
-input[type='password'] {
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
   width: 300px;
   font-size: 1.25rem;
 }
@@ -162,12 +162,23 @@ form button {
   margin: 20px 0;
 }
 
-.login_info{
+.login_info {
   margin-top: 80px;
 }
 
 .login_info a {
   text-decoration: none;
   color: peru;
-  text-shadow: 1px 1px 2px #000;
+  font-weight: bold;
+  text-shadow: 0.5px 0.5px 1.5px #000;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid blue;
+  box-shadow: 1px 1px 5px 1px;
 }
